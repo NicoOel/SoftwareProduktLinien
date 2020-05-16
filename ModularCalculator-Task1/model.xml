@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+	<properties>
+		<graphics key="showhiddenfeatures" value="true"/>
+		<graphics key="legendautolayout" value="true"/>
+		<graphics key="showshortnames" value="false"/>
+		<graphics key="layout" value="horizontal"/>
+		<graphics key="showcollapsedconstraints" value="true"/>
+		<graphics key="legendhidden" value="false"/>
+		<graphics key="layoutalgorithm" value="1"/>
+	</properties>
+	<struct>
+		<and abstract="true" mandatory="true" name="ModularCalculator">
+			<description>a simple changable calculator</description>
+			<graphics key="collapsed" value="false"/>
+			<alt abstract="true" name="Operating System Acceleration">
+				<description>Wich operation system is used to run the calculator; used to exploit special circumstances in the operating system</description>
+				<graphics key="collapsed" value="false"/>
+				<feature name="Windows">
+					<description>The operating system Windows by Microsoft</description>
+				</feature>
+				<feature name="Linux">
+					<description>A distribution of the operating system Linux by diverse</description>
+				</feature>
+			</alt>
+			<or abstract="true" name="Logging">
+				<description>Should special events of the software be logged</description>
+				<feature name="Html">
+					<description>The logger uses a html file</description>
+				</feature>
+				<feature name="Txt">
+					<description>The logger uses a plain txt file</description>
+				</feature>
+			</or>
+			<alt abstract="true" name="Front End">
+				<description>The user interface to interact with the calculator</description>
+				<alt abstract="true" name="GUI">
+					<description>using a graphical interface to interact with the front end</description>
+					<feature name="Normal Mode">
+						<description>a normal mode with less features, easier to use</description>
+					</feature>
+					<feature name="Feature Strong Mode">
+						<description>a  special mode with more feature</description>
+					</feature>
+				</alt>
+				<feature name="Console">
+					<description>Using the console to interact with the calculator</description>
+				</feature>
+			</alt>
+			<or abstract="true" mandatory="true" name="Functionality">
+				<description>the functionality of the calculator</description>
+				<or abstract="true" name="Basic Functions">
+					<description>the four basic arithmetics</description>
+					<feature name="Addition">
+						<description>used to get the sum of two values</description>
+					</feature>
+					<feature name="Substraction">
+						<description>used to substract one value from another</description>
+					</feature>
+					<feature name="Multiplication">
+						<description>used to multiply two values</description>
+					</feature>
+					<feature name="Division">
+						<description>used to devide one value by another</description>
+					</feature>
+				</or>
+				<or abstract="true" name="Advanced Functions">
+					<description>advanced arithmetic options</description>
+					<feature name="Root">
+						<description>calculate the root of a value</description>
+					</feature>
+					<feature name="Power">
+						<description>used to exponentiate a value</description>
+					</feature>
+				</or>
+			</or>
+			<or abstract="true" name="Configuration">
+				<description>used to transmit optional configurations</description>
+				<feature name="Json">
+					<description>using a json file to get the configuration</description>
+				</feature>
+				<feature name="Xml">
+					<description>using a xml file to get the configuration</description>
+				</feature>
+			</or>
+			<feature mandatory="true" name="Base Calculator">
+				<description>Basic calculator class</description>
+			</feature>
+		</and>
+	</struct>
+	<constraints>
+		<rule>
+			<imp>
+				<var>Normal Mode</var>
+				<not>
+					<var>Advanced Functions</var>
+				</not>
+			</imp>
+		</rule>
+	</constraints>
+</featureModel>
