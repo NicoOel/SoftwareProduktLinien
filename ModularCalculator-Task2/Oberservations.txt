@@ -1,0 +1,2 @@
+Das An- und Abwählen von den Features durch die default.xml Konfiguration hat nicht immer direkt funktioniert, teilweise konnte dies durch Schließen und Öffnen der Datei behoben werden.
+Ein weiteres Problem bestand in der Importierung des Featuremodelles in das neue Projekt. Dies hat trotz der Import-Funktion in Eclipse nicht gut funktioniert.
