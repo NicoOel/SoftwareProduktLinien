@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+	<properties>
+		<graphics key="legendposition" value="1151,63"/>
+		<graphics key="legendautolayout" value="false"/>
+		<graphics key="showshortnames" value="false"/>
+		<graphics key="layout" value="horizontal"/>
+		<graphics key="showcollapsedconstraints" value="true"/>
+		<graphics key="legendhidden" value="false"/>
+		<graphics key="layoutalgorithm" value="1"/>
+	</properties>
+	<struct>
+		<and abstract="true" mandatory="true" name="ModularCalculatorTask2">
+			<alt abstract="true" name="OperatingSystemAcceleration">
+				<feature abstract="true" name="Windows"/>
+				<feature abstract="true" name="Linux"/>
+			</alt>
+			<or abstract="true" name="Logging">
+				<feature abstract="true" name="Html"/>
+				<feature abstract="true" name="Txt"/>
+			</or>
+			<alt abstract="true" name="FrontEnd">
+				<alt abstract="true" name="GUI">
+					<feature abstract="true" name="NormalMode"/>
+					<feature abstract="true" name="FeatureStrongMode"/>
+				</alt>
+				<feature abstract="true" name="Console"/>
+			</alt>
+			<and abstract="true" mandatory="true" name="Functionality">
+				<or abstract="true" name="BasicFunctionality">
+					<feature name="Addition"/>
+					<feature abstract="true" name="Substraction"/>
+					<feature abstract="true" name="Multtiplication"/>
+					<feature abstract="true" name="Division"/>
+				</or>
+				<or abstract="true" name="AdvancedFunctionality">
+					<feature name="Root"/>
+					<feature abstract="true" name="Power"/>
+				</or>
+			</and>
+			<and abstract="true" name="Configuration">
+				<feature abstract="true" name="Json"/>
+				<feature abstract="true" name="Xml"/>
+			</and>
+			<feature abstract="true" mandatory="true" name="BaseCalculator"/>
+		</and>
+	</struct>
+</featureModel>
