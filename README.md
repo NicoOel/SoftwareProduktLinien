@@ -15,3 +15,26 @@ Sie bildet ein relativ simples Beispiel, welches viele Möglichkeiten zur Erweit
 ### Gibt es bereits eine Implementierung, die Sie nutzen möchten?
 
 Nein, ich habe keine gefunden.
+
+***
+
+## Task 2
+### Wie sind Sie beim Programmieren vorgegangen? 
+
+Nach der Einarbeitung mit Hilfe des Videos wurden die Schritte im Video durchgeführt und in der Main-Methode mit einzelnen Properties und Konfigurationen experimentiert. Dannach wurden die zwei Features eingebunden
+
+### Haben Sie die Parameter nacheinander entwickelt?
+
+Nein, erst wurde ein Grundkonzept erstellt, auf welchem dann aufbauened die Features eingebunden wurden. Die einzelnen Parameter/Features wurden dann doch nacheinander implementiert.
+
+### Welche Änderungen mussten Sie vornehmen?
+
+Auf Grundlage von Aufgabe 1 wurde der Quellcode für die Hauptmethode und die Features hinzugefügt, sowie das Projekt um eine runtime.Properties-Datei erweitert.
+
+### Welche der 5 Konfigurationen verhalten sich identisch?: 
+
+Da zwei ähnliche Features, welche Teile des Funktionsumfanges darstellen, implementiert wurden, gleichen sich ein Großteil der Konfigurationen und verhalten sich identisch. Demgegenüber nutzt die minimale Version keine Features und die vereinfachte Version für Grundschüler nur ein Feature.
+
+
+
+
