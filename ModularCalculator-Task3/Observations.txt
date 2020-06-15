@@ -1,0 +1,2 @@
+Ein Problem bestand in der Aktualisierung des generierten Source-Codes. Hierbei musste die genutzte Konfiguration immer neu ausgewählt werden um diesen zu erstellen und kompilieren zu können.
+Nach der Implementierung der Feature konnte kein Fehler bei der Nutzung der fünf Konfigurationen gefunden werden.
