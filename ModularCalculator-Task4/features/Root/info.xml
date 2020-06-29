@@ -1,0 +1,5 @@
+<plugin>
+	<interface id="interfaces.Calculation">
+		<class>Root</class>
+	</interface>
+</plugin>

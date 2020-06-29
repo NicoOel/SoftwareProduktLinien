@@ -1,0 +1,1 @@
+Änderungen in features wurden teilweise nicht in das Programm übernommen, wahrscheinlich weil die jar dateien nicht angepasst wurden. Das Problem konnte auch durch änderung der Configs nicht immer gelöst werden.

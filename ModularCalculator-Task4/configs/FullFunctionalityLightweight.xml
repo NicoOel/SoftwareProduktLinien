@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+	<feature automatic="selected" name="ModularCalculatorTask4"/>
+	<feature name="OperatingSystemAcceleration"/>
+	<feature name="Windows"/>
+	<feature name="Linux"/>
+	<feature automatic="selected" manual="selected" name="Logging"/>
+	<feature name="Html"/>
+	<feature manual="selected" name="Txt"/>
+	<feature automatic="selected" manual="selected" name="FrontEnd"/>
+	<feature automatic="unselected" name="GUI"/>
+	<feature automatic="unselected" name="NormalMode"/>
+	<feature automatic="unselected" name="FeatureStrongMode"/>
+	<feature manual="selected" name="Console"/>
+	<feature automatic="selected" name="Functionality"/>
+	<feature automatic="selected" manual="selected" name="BasicFunctionality"/>
+	<feature manual="selected" name="Addition"/>
+	<feature manual="selected" name="Substraction"/>
+	<feature manual="selected" name="Multtiplication"/>
+	<feature manual="selected" name="Division"/>
+	<feature automatic="selected" manual="selected" name="AdvancedFunctionality"/>
+	<feature manual="selected" name="Root"/>
+	<feature manual="selected" name="Power"/>
+	<feature name="Configuration"/>
+	<feature name="TxtConf"/>
+	<feature name="Xml"/>
+	<feature automatic="selected" name="BaseCalculator"/>
+</configuration>

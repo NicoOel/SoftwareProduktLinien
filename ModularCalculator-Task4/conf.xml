@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<conf>
+	<name>roundToInteger</name>
+	<value>false</value>
+</conf>

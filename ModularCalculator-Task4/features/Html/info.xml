@@ -1,0 +1,5 @@
+<plugin>
+	<interface id="interfaces.Logging">
+		<class>Html</class>
+	</interface>
+</plugin>
