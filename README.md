@@ -35,6 +35,22 @@ Auf Grundlage von Aufgabe 1 wurde der Quellcode für die Hauptmethode und die Fe
 
 Da zwei ähnliche Features, welche Teile des Funktionsumfanges darstellen, implementiert wurden, gleichen sich ein Großteil der Konfigurationen und verhalten sich identisch. Demgegenüber nutzt die minimale Version keine Features und die vereinfachte Version für Grundschüler nur ein Feature.
 
+***
+
+## Task 3
+### Welche Fehler haben Sie beim Testen gefunden?: 
+
+Allgemein wurde das Debugging erschwert, da aus dem Feature durch Auswahl einer Konfiguration erst der Source Code erstellt werden musste, dieser konnte dann debuggt werden.
+
+### Wie haben Sie Stellen lokalisiert an denen die neuen Features eingefügt werden mussten? 
+Aus der grundlegenden Struktur ergab sich relativ schnell der Punkt, wo Features eingefügt werden konnten.
+
+### Gibt es verschachtelte Annotationen? 
+Nein, dies konnte erfolgreich vermieden werden um die Lesbarkeit und Wartbarkeit zu verbessern.
+
+### Wie viele Annotationen gibt es maximal zu einem Feature? 
+Auch hier konnten komplizierte aufrufe umgangen werden, weshalb nur eine Annotation nötig war. Dadurch ist der Code jedoch etwas länger, aber auch verständlicher.
+
 
 
 
