@@ -51,6 +51,23 @@ Nein, dies konnte erfolgreich vermieden werden um die Lesbarkeit und Wartbarkeit
 ### Wie viele Annotationen gibt es maximal zu einem Feature? 
 Auch hier konnten komplizierte aufrufe umgangen werden, weshalb nur eine Annotation nötig war. Dadurch ist der Code jedoch etwas länger, aber auch verständlicher.
 
+***
 
+## Task 4
+### Welche Fehler haben Sie beim Testen gefunden?
 
+Verschachtelte Pluginaufrufe können teilweise zu nichtbeachtung von features/plugins führen.
 
+### Wie aufwändig ist es, Plugins zu erstellen?
+
+Im Vergleich zu den letzten Aufgaben etwas komplexer, jedoch auch sehr viel besser und klarer abgetrennt.
+
+### Wie oft mussten Sie nachträglich das Framework oder die Interfaces anpassen? 
+
+Die Interfaces mussten nicht angepasst werden, am Framework mussten jedoch einige Änderung vorgenommen werden.
+
+### Wie viele Interfaces gibt es in Ihrer Implementierung? 
+Drei Interfaces, welche in dem feature Modell jeweils immer zu einem abstrakten Feature bzw. einer Funktionalität gehören.
+
+### Welche Anpassungen könnten beim Hinzufügen weiterer Plug-Ins nötig werden? 
+Einige Anpassungen in der Struktur des Frameworks bezüglich der Reihenfolge und Art, wie die bestehenden Plugins eingesetzt werden. Der Code in den anderen Plugins sollte aber ohne große Änderungen weiter benutzt werden können.
