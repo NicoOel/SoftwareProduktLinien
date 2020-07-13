@@ -1,0 +1,3 @@
+Ein großer Fehler, welcher nicht gelöst werden konnte, bestand darin, dass in der Entwicklungsumgebung nur die "default" Konfiguration genutzt werden konnte. 
+Diese konnte jeweils versuchsweise an die fünf anderen Konfigurationen angeglichen werden um das Verhalten dieser zu emulieren.
+Das Problem hierbei bestand darin, dass die anderen Konfigurationen die Vererbungshierarchien in einer falschen Reihenfolge abbildeten und somit die "original()"-Methode ins leere lief.
