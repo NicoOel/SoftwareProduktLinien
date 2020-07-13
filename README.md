@@ -71,3 +71,22 @@ Drei Interfaces, welche in dem feature Modell jeweils immer zu einem abstrakten 
 
 ### Welche Anpassungen könnten beim Hinzufügen weiterer Plug-Ins nötig werden? 
 Einige Anpassungen in der Struktur des Frameworks bezüglich der Reihenfolge und Art, wie die bestehenden Plugins eingesetzt werden. Der Code in den anderen Plugins sollte aber ohne große Änderungen weiter benutzt werden können.
+
+***
+
+## Task 5
+### Welche Fehler haben Sie beim Testen gefunden?
+
+Einen großen Fehler, siehe Observation.txt. Daneben wurden erst einige Fehler produziert, bis die Vererbungshierarchie mit "original()" ganz verstanden wurde, diese konnten aber gelöst werden.
+
+### Welche Features waren einfach zu modularisieren, welche eher aufwändig und warum?
+
+Die meisten Features waren gut zu modularisieren, auch weil die meisten von Ihnen schon in der vorherigen Aufgabe aufgebrochen wurden. Aufwändig waren die vielen Features zur Berechnung, vor allem weil diese Features alle eine Methode erweitern, so war die "Verfeinerungshierarchie" sehr unübersichtlich
+
+### War es für die Implementierung eines Feature Moduls nötig, andere Features zu ändern? Mussten Sie viel vorausplanen oder waren alle neuen Features leicht umzusetzen?
+
+Für die meisten Features musste eine Änderung in dem Basisfeature "BaseCalculator" durchgefürt werden. Groß Planung war jedoch nicht notwendig, viele Features konnte durch die Erweiterung der Basisklasse um globalen Variablen implementiert werden.
+
+### Gibt es - neben der Basisimplementierung - Features, die neue Klassen einführen oder bestehende Methoden verfeinern?
+
+Neue Klassen wurden nicht benötigt, die meisten Features verfeinern jedoch bestehende Methoden, meist wenn sie das gleiche Mutter-Feature besitzen, wie z.B. "Logging" und die zwei Unterfeature.
